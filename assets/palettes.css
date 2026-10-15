@@ -1,0 +1,19 @@
+/* Generated from Sources/NoteCore/StudyPalette (StudyDiscipline.swift). Do not edit by hand. */
+[data-d="architecture"]{--canvas:#f8f5f0;--sidebar:#eee9e4;--panel:#f2eee9;--paper:#fffcf7;--ink:#332d3e;--muted:#746879;--accent:#695278;--selection:#e5dbe9;--rule:#ddd5d9;--signal:#ad6248;--hero:#eae1dc}
+[data-d="medicine"]{--canvas:#f6f7f5;--sidebar:#ecefee;--panel:#eff2f1;--paper:#fffffd;--ink:#22343a;--muted:#5b6d73;--accent:#1d6a70;--selection:#d5e8e7;--rule:#d3dddd;--signal:#b8483f;--hero:#e3eceb}
+[data-d="life"]{--canvas:#f6f5ee;--sidebar:#edede3;--panel:#f0efe6;--paper:#fffef8;--ink:#2f3526;--muted:#626c56;--accent:#4a672d;--selection:#dfe7d2;--rule:#d8dbcc;--signal:#9c6a1e;--hero:#e6e8da}
+[data-d="formal"]{--canvas:#f5f6f8;--sidebar:#ecedf2;--panel:#eff0f4;--paper:#ffffff;--ink:#252b3d;--muted:#5e677d;--accent:#2f4a85;--selection:#dce2f1;--rule:#d6dae4;--signal:#956a24;--hero:#e3e7f0}
+[data-d="engineering"]{--canvas:#f4f4f2;--sidebar:#eaeae7;--panel:#eeeeeb;--paper:#fffffe;--ink:#26292e;--muted:#60656d;--accent:#3c4a5a;--selection:#dee3e9;--rule:#d9dbdd;--signal:#c0501f;--hero:#e6e7e8}
+[data-d="economics"]{--canvas:#f5f5f0;--sidebar:#ebece5;--panel:#eff0ea;--paper:#fffffa;--ink:#213229;--muted:#5a6c61;--accent:#1e5a43;--selection:#d6e6dd;--rule:#d5dcd6;--signal:#93702f;--hero:#e3eae4}
+[data-d="law"]{--canvas:#f7f4f2;--sidebar:#eee8e6;--panel:#f2edea;--paper:#fffcfa;--ink:#3a2a2c;--muted:#77615f;--accent:#7e2430;--selection:#eedadc;--rule:#e0d5d4;--signal:#8f6a2c;--hero:#ede3e1}
+[data-d="humanities"]{--canvas:#f7f4ee;--sidebar:#eee9e0;--panel:#f2ede5;--paper:#fffdf8;--ink:#3a3128;--muted:#76685a;--accent:#6b4a33;--selection:#ebdfd2;--rule:#dfd6cb;--signal:#a63d3d;--hero:#ede5da}
+@media (prefers-color-scheme: dark){
+  [data-d="architecture"]{--canvas:#211f26;--sidebar:#1c1a21;--panel:#29262f;--paper:#302c35;--ink:#f4ede5;--muted:#b9adbf;--accent:#cfb6df;--selection:#49394f;--rule:#48414c;--signal:#e7a58a;--hero:#37303b}
+  [data-d="medicine"]{--canvas:#1a2022;--sidebar:#161b1d;--panel:#232b2e;--paper:#293235;--ink:#ecf2f1;--muted:#a3b5b9;--accent:#7fc9c9;--selection:#24484a;--rule:#3a474a;--signal:#f08e80;--hero:#263235}
+  [data-d="life"]{--canvas:#1d201a;--sidebar:#181b16;--panel:#262a22;--paper:#2c3127;--ink:#eef0e4;--muted:#aeb89f;--accent:#a9c98a;--selection:#3a4a2c;--rule:#434a3b;--signal:#e7b565;--hero:#2d3427}
+  [data-d="formal"]{--canvas:#1b1d25;--sidebar:#171920;--panel:#252833;--paper:#2b2f3b;--ink:#edeef5;--muted:#abb2c6;--accent:#a3b6ea;--selection:#323c5c;--rule:#414657;--signal:#e2ba72;--hero:#2a2f3e}
+  [data-d="engineering"]{--canvas:#1c1d1f;--sidebar:#17181a;--panel:#26282b;--paper:#2c2e32;--ink:#eff0f1;--muted:#aeb3ba;--accent:#afc0d3;--selection:#38424d;--rule:#43464b;--signal:#f59768;--hero:#2b2e33}
+  [data-d="economics"]{--canvas:#1a201d;--sidebar:#161b18;--panel:#232a26;--paper:#29312c;--ink:#ecf1ec;--muted:#a5b8ac;--accent:#86c9a8;--selection:#284a3b;--rule:#3c4842;--signal:#e0be7a;--hero:#26302b}
+  [data-d="law"]{--canvas:#211b1c;--sidebar:#1c1718;--panel:#2c2425;--paper:#332a2b;--ink:#f4ecea;--muted:#c0aaac;--accent:#e79aa3;--selection:#4e2f33;--rule:#4b3f40;--signal:#ddbb7a;--hero:#382d2f}
+  [data-d="humanities"]{--canvas:#211e1a;--sidebar:#1c1915;--panel:#2b2722;--paper:#322d27;--ink:#f3ede4;--muted:#bfb2a2;--accent:#d8b595;--selection:#4a3b2e;--rule:#4a4239;--signal:#e59a8f;--hero:#37302a}
+}

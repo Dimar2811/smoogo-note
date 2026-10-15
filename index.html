@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de" data-d="architecture">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SmooGo Note – die Notiz-App fürs Studium</title>
+<meta name="description" content="Mitschreiben, zeichnen, aufnehmen: SmooGo Note verbindet Vorlesungsfolien, Apple Pencil und Audio. Für iPhone, iPad und Mac – lokal, ohne Tracking.">
+<meta name="theme-color" content="#f8f5f0">
+<meta property="og:title" content="SmooGo Note – die Notiz-App fürs Studium">
+<meta property="og:description" content="Folien daneben, Apple Pencil, Aufnahmen mit Zeitmarken. Deine Notizen bleiben bei dir.">
+<meta property="og:image" content="https://dimar2811.github.io/smoogo-note/assets/img/icon-512.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/study/sunstudy-0600.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/palettes.css">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/study.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/apple-touch-icon.png" alt="" width="30" height="30">SmooGo Note</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a class="opt" href="#werkzeuge">Werkzeuge</a>
+      <a href="datenschutz/">Datenschutz</a>
+      <a href="support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow arrive" style="--i:0" data-eyebrow>DEIN STUDIENATELIER</p>
+        <h1 class="display arrive" style="--i:1" data-title>Gute Ideen
+brauchen Raum.</h1>
+        <p class="lead arrive" style="--i:2" data-sub>Gedanken sammeln. Zusammenhänge zeichnen. Etwas Eigenes entwerfen.</p>
+        <p class="arrive" style="--i:3; margin-top:22px; max-width:44ch">SmooGo Note ist die Notiz-App fürs Studium: Folien neben der Mitschrift, Apple Pencil, Aufnahmen mit Zeitmarken. Deine Notizen bleiben bei dir.</p>
+        <div class="platforms arrive" style="--i:4">
+          <span class="chip"><i></i>Bald im App Store</span>
+          <span>iPhone · iPad · Mac</span>
+        </div>
+      </div>
+
+      <div class="stage-card arrive" style="--i:2">
+        <div class="stage" data-stage data-frames="assets/study/" role="slider" tabindex="0"
+             aria-label="Sonnenstudie des Pavillons" aria-valuemin="360" aria-valuemax="1260" aria-valuenow="720" aria-valuetext="12:00, Mittagssonne">
+          <img class="frame" src="assets/study/sunstudy-1200.webp" alt="" width="1024" height="768">
+          <canvas class="frame" hidden></canvas>
+          <svg aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="glow"><stop offset="8%" style="stop-color:var(--signal)"/><stop offset="100%" style="stop-color:var(--signal);stop-opacity:0"/></radialGradient>
+            </defs>
+          </svg>
+          <span class="loading" aria-hidden="true">LÄDT&nbsp;…</span>
+        </div>
+        <div class="readout">
+          <span class="legend" data-legend>SONNENSTUDIE · 47° N · 20. MÄRZ</span>
+          <div class="row">
+            <span class="primary" data-primary>12:00</span>
+            <span class="phase" data-phase>Mittagssonne</span>
+            <button class="rest" type="button" data-rest><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/></svg><span>Jetzt</span></button>
+          </div>
+          <span class="detail" data-detail>HÖHE 42° · AZIMUT 178°</span>
+          <span class="hint" data-hint>Ziehen verschiebt die Tageszeit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chooser" id="fachrichtungen" aria-labelledby="chooser-title">
+    <div class="wrap">
+      <div class="chooser-head">
+        <div>
+          <p class="eyebrow">Acht Fachrichtungen</p>
+          <h2 id="chooser-title">Was studierst du?</h2>
+        </div>
+        <p>Die App färbt sich in die Palette deiner Richtung und zeigt ihr Lehrmodell. Deine Notizen bleiben dabei, wie sie sind.</p>
+      </div>
+      <ul class="disciplines">
+        <li><button type="button" data-discipline="architecture" aria-pressed="true"><span class="n">01 · ATELIER</span><span class="t">Architektur &amp; Gestaltung</span><span class="p">Architektur, Innenarchitektur&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="medicine" aria-pressed="false"><span class="n">02 · KLINIK</span><span class="t">Medizin &amp; Gesundheit</span><span class="p">Humanmedizin, Zahnmedizin&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="life" aria-pressed="false"><span class="n">03 · LABOR</span><span class="t">Natur &amp; Leben</span><span class="p">Biologie, Chemie, Biochemie&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="formal" aria-pressed="false"><span class="n">04 · KABINETT</span><span class="t">Mathematik &amp; Physik</span><span class="p">Mathematik, Physik&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="engineering" aria-pressed="false"><span class="n">05 · WERKSTATT</span><span class="t">Technik &amp; Informatik</span><span class="p">Maschinenbau, Informatik&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="economics" aria-pressed="false"><span class="n">06 · KONTOR</span><span class="t">Wirtschaft</span><span class="p">BWL, VWL, Finance&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="law" aria-pressed="false"><span class="n">07 · KANZLEI</span><span class="t">Recht</span><span class="p">Jura, Steuerrecht&nbsp;…</span></button></li>
+        <li><button type="button" data-discipline="humanities" aria-pressed="false"><span class="n">08 · LESESAAL</span><span class="t">Geistes- &amp; Sozial&shy;wissenschaften</span><span class="p">Psychologie, Geschichte&nbsp;…</span></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="werkzeuge" aria-labelledby="tools-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Werkzeuge</p>
+          <h2 id="tools-title">Alles, was eine Mitschrift braucht.</h2>
+          <p>Gebaut für Vorlesung, Seminar und Lernphase: auf iPad und Mac am Schreibtisch, auf dem iPhone unterwegs.</p>
+        </div>
+        <img class="obj" src="assets/img/atelier-object-scale.webp" alt="" width="512" height="384">
+      </div>
+      <ol class="legend-list">
+        <li><span class="n">01</span><h3>Folien daneben</h3><p>Öffne Vorlesungsfolien oder ein PDF neben deiner Notiz, auf iPad und Mac auch in einem eigenen Fenster. Neue Absätze und Striche verknüpfen sich mit der sichtbaren Folie; ein Tipp auf die Marke springt zurück. „Mitschrift mit Folien“ exportiert jede Folie neben deinen Notizen.</p></li>
+        <li><span class="n">02</span><h3>Schreiben mit dem Apple Pencil</h3><p>Druckempfindliche Tinte, Textmarker, Radierer und Formen. Hältst du einen Strich, rastet er zur Linie, zum Rechteck oder zur Ellipse ein. Der Pencil zeichnet, ein Finger scrollt, und Doppeltippen folgt deiner Systemeinstellung.</p></li>
+        <li><span class="n">03</span><h3>Aufnehmen mit Zeitmarken</h3><p>Nimm die Vorlesung auf, während du schreibst. Zeitmarken verbinden deine Notizen mit der Stelle in der Aufnahme. Transkribiert wird auf dem Gerät.</p></li>
+        <li><span class="n">04</span><h3>PDFs durcharbeiten</h3><p>Markieren, unterstreichen, durchstreichen und kommentieren, Seiten drehen und umsortieren, alles mit Rückgängig. Text in Bildern erkennt die App direkt auf dem Gerät.</p></li>
+        <li><span class="n">05</span><h3>Ordnung wie im Studium</h3><p>Notizbücher, Abschnittsgruppen, Abschnitte und Unterseiten, dazu Suche, Favoriten, Schlagwörter, Archiv und Vorlagen. Auf unterstützten Geräten fasst Apple Intelligence zusammen und findet Aufgaben, lokal auf dem Gerät.</p></li>
+        <li><span class="n">06</span><h3>Auf all deinen Geräten</h3><p>iPhone, iPad und Mac gleichen sich über deine private iCloud ab, sobald du es einschaltest. Kein Konto bei uns, kein Server von uns.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="privat" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Datenschutz</p>
+          <h2 id="privacy-title">Deine Notizen gehören dir.</h2>
+          <p>Sie bleiben auf deinem Gerät, solange du nichts anderes entscheidest.</p>
+        </div>
+        <img class="obj" src="assets/img/atelier-object-box.webp" alt="" width="512" height="384">
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg><p>Notizen bleiben lokal auf deinem Gerät.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7.1 9.6 4.5 4.5 0 0 0 7 18.5z"/></svg><p>iCloud nur, wenn du es einschaltest – in deinem privaten Account.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12s3.3-6 9-6c2 0 3.7.7 5.1 1.7M21 12s-3.3 6-9 6c-2 0-3.7-.7-5.1-1.7"/><circle cx="12" cy="12" r="2.6"/><path d="M4 4l16 16"/></svg><p>Kein Tracking, keine Analyse, keine Werbung.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 9.6-3.7"/><circle cx="16.5" cy="9" r="2.4"/><path d="M3 3l18 18"/></svg><p>Keine Weitergabe an Dritte.</p></div>
+      </div>
+      <p class="promise-foot"><a href="datenschutz/">Datenschutzerklärung lesen</a><a href="support/">Support und Kontakt</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/apple-touch-icon.png" alt="" width="30" height="30">SmooGo Note</a>
+    <nav aria-label="Rechtliches und Hilfe">
+      <a href="datenschutz/">Datenschutz</a>
+      <a href="support/">Support</a>
+      <a href="en/privacy/" hreflang="en" lang="en">Privacy</a>
+      <a href="en/support/" hreflang="en" lang="en">Support (English)</a>
+    </nav>
+    <div class="fine">
+      <span>© 2026 Marc Hammerschmidt</span>
+      <a href="mailto:support@3d-voxelia.com">support@3d-voxelia.com</a>
+      <span>Keine Cookies, keine Analyse, keine Inhalte von Dritten.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
