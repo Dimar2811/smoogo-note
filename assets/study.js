@@ -233,11 +233,19 @@
   function load(s, first) {
     const list = frames(s);
     const order = [...list.keys()].sort((a, b) => Math.abs(a - first) - Math.abs(b - first));
-    return Promise.all(order.map(k => {
+    // Wait for load or error, never for decode(): a rejected decode after the image already loaded
+    // would leave the promise pending forever. The timeout keeps the intro from waiting on a slow network.
+    const settled = img => new Promise(done => {
+      if (img.complete && img.naturalWidth) return done();
+      img.addEventListener("load", done, { once: true });
+      img.addEventListener("error", done, { once: true });
+    });
+    const all = Promise.all(order.map(k => {
       const img = list[k];
       if (!img.src) img.src = img.dataset.src;
-      return (img.complete && img.naturalWidth) ? Promise.resolve() : img.decode().catch(() => new Promise(r => { img.onload = img.onerror = r; }));
+      return settled(img);
     }));
+    return Promise.race([all, new Promise(done => setTimeout(done, 4000))]);
   }
   const ready = img => img && img.complete && img.naturalWidth > 0;
 
